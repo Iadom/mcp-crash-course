@@ -1,0 +1,24 @@
+[project]
+name = "mcp-crash-course"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "IADEROSA DOMENICO", email = "domenico.iaderosa@esternibisp.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-google-genai>=4.4.2",
+    "langchain-mcp-adapters>=0.3.2",
+    "langchain[mcp]>=1.3.18",
+    "langgraph>=1.2.16",
+    "mcp[cli]>=1.30.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+mcp-crash-course = "mcp_crash_course:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
